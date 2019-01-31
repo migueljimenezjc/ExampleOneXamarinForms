@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.Login">
+    <ContentPage.Content>
+        
+        <ScrollView>
+              <Grid Margin="25" ColumnSpacing="0" RowSpacing="0">
+       
+       <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+       </Grid.ColumnDefinitions>     
+       <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="*" />      
+          <RowDefinition Height="*" />      
+       </Grid.RowDefinitions>     
+          
+       <StackLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="0" 
+                    Grid.Column="1">
+         <Image Source="boy.png"  />   
+       </StackLayout>     
+       
+       <StackLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="1" 
+                    Grid.Column="1">
+         <Label Text="Usuario"></Label>   
+         <Entry TextColor="Gray" 
+                Placeholder="Ejemplo...AlexLemus"
+                PlaceholderColor="Green"
+                >
+                               
+         </Entry>
+       
+       </StackLayout>
+            
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     Grid.Row="2" 
+                     Grid.Column="1">
+       
+         <Label  Text="Password"></Label>   
+         <Entry TextColor="Gray" 
+                PlaceholderColor="Green" 
+                IsPassword="true"
+                >                        
+         </Entry>   
+       </StackLayout>
+       
+       <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     Grid.Row="3" 
+                     Grid.Column="1">
+        
+        <Button
+               BackgroundColor="Green"   
+               TextColor="White"
+               WidthRequest="50"
+               HeightRequest="32"
+               FontSize="10"
+               Clicked="Handle_Clicked_1" 
+               Text="Iniciar Sesión">                    
+       </Button>
+        
+       <Button  BackgroundColor="Transparent" 
+                BorderWidth="0" 
+                TextColor="Teal"
+                FontSize="10"
+                Text="Recuperar contraseña" 
+                Clicked="Handle_Clicked">                    
+       </Button> 
+                    
+       </StackLayout>
+       
+       
+     
+                
+                
+    </Grid>
+                       
+            
+        </ScrollView>
+  
+    </ContentPage.Content>
+</ContentPage>
